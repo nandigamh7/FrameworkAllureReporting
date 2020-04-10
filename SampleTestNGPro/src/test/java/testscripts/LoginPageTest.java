@@ -28,6 +28,7 @@ public class LoginPageTest extends BaseClass{
 	public void loginPageTitleTest(){
 		String loginPageTitle = loginPage.validateLoginPage();
 		Assert.assertEquals(loginPageTitle, loginTitle);
+		system.out.println("Assertion Passed");
 	}
 	
 	@Test(priority =2, groups="Group2")
