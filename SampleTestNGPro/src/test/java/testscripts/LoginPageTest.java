@@ -21,6 +21,7 @@ public class LoginPageTest extends BaseClass{
 	public void beforeTest() {
 		initialisation();
 		loginPage = new LoginPage();
+		
 	
 	}
 	
