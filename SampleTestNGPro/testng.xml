@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestSuite"  parallel="classes" thread-count="6" >
+  <test name="Test">
+    <classes>
+      <class name="test.java.testscripts.Verify_the_listviews_in_Accounts"/>
+      <class name="test.java.testscripts.Verify_the_listviews_in_AccountsLabelsCheck"/>
+      <class name="test.java.testscripts.Verify_the_listviews_in_Cases"/>
+       <class name="test.java.testscripts.Verify_the_listviews_in_CasesLabelsCheck"/>
+       <class name="test.java.testscripts.Verify_the_listviews_in_Lead"/>
+       <class name="test.java.testscripts.Verify_the_listviews_in_LeadLabelsCheck"/>
+    </classes>   
+  </test>    
+</suite>
