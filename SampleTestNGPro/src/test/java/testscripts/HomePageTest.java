@@ -22,13 +22,7 @@ public class HomePageTest extends BaseClass{
 	public HomePageTest(){
 		super();
 	}
-	
-	@Test
-	public void verifyHomePageTitleTest(){
-		String homePageTitle = homePage.verifyHomePageTtl();
-		Assert.assertEquals(homePageTitle, homeTitle);
-	}
-	
+
 	@BeforeTest
 	public void beforeTest() throws Exception {
 		
@@ -37,6 +31,17 @@ public class HomePageTest extends BaseClass{
 		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 		contactsPage = new ContactsPage();
 	}
+	
+	@Test
+	public void verifyHomePageTitleTest(){
+		String homePageTitle = homePage.verifyHomePageTtl();
+		Assert.assertEquals(homePageTitle, homeTitle);
+	}
+	
+//	@Test
+//	public void contactsTabNav() {
+//		contacts
+//	}
 	
 	@AfterTest
 	public void afterTest() {
